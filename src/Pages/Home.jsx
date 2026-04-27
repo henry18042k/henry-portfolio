@@ -80,7 +80,7 @@ const WORDS = [
   "Master's in Data Science",
   "AI & Machine Learning Researcher",
   "Financial Risk & Data Analyst", // Thêm vai trò cho ngân hàng
-  "Medical Imaging Specialist"
+  "Deep Learning Specialist"
 ];
 const TECH_STACK = [
   "ML/DL",          // Viết tắt để tối ưu không gian

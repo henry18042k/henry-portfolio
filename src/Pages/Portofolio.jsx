@@ -103,21 +103,34 @@ function a11yProps(index) {
 }
 
 // techStacks tetap sama
+// const techStacks = [
+//   { icon: "html.svg", language: "HTML" },
+//   { icon: "css.svg", language: "CSS" },
+//   { icon: "javascript.svg", language: "JavaScript" },
+//   { icon: "tailwind.svg", language: "Tailwind CSS" },
+//   { icon: "reactjs.svg", language: "ReactJS" },
+//   { icon: "vite.svg", language: "Vite" },
+//   { icon: "nodejs.svg", language: "Node JS" },
+//   { icon: "bootstrap.svg", language: "Bootstrap" },
+//   { icon: "firebase.svg", language: "Firebase" },
+//   { icon: "MUI.svg", language: "Material UI" },
+//   { icon: "vercel.svg", language: "Vercel" },
+//   { icon: "SweetAlert.svg", language: "SweetAlert2" },
+// ];
 const techStacks = [
-  { icon: "html.svg", language: "HTML" },
-  { icon: "css.svg", language: "CSS" },
-  { icon: "javascript.svg", language: "JavaScript" },
-  { icon: "tailwind.svg", language: "Tailwind CSS" },
-  { icon: "reactjs.svg", language: "ReactJS" },
-  { icon: "vite.svg", language: "Vite" },
-  { icon: "nodejs.svg", language: "Node JS" },
-  { icon: "bootstrap.svg", language: "Bootstrap" },
-  { icon: "firebase.svg", language: "Firebase" },
-  { icon: "MUI.svg", language: "Material UI" },
-  { icon: "vercel.svg", language: "Vercel" },
-  { icon: "SweetAlert.svg", language: "SweetAlert2" },
+  { icon: "python.svg", language: "Python" },
+  { icon: "pytorch.svg", language: "PyTorch" },
+  { icon: "tableau.svg", language: "Tableau" },
+  { icon: "docker.svg", language: "Docker" },
+  { icon: "sql.svg", language: "SQL" },
+  { icon: "power-bi.svg", language: "Power BI" },
+  { icon: "pandas.svg", language: "Pandas" },
+  { icon: "numpy.svg", language: "NumPy" },
+  { icon: "reactjs.svg", language: "React.js" }, // Giữ lại vì Portfolio dùng React
+  { icon: "MLDL.svg", language: "ML/DL" },
+  { icon: "excel.svg", language: "Excel" },
+  { icon: "git.svg", language: "Git" },
 ];
-
 export default function FullWidthTabs() {
   const theme = useTheme();
   const [value, setValue] = useState(0);

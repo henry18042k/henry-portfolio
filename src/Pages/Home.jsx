@@ -17,26 +17,26 @@ const StatusBadge = memo(() => (
     </div>
   </div>
 ));
-
 const MainTitle = memo(() => (
   <div className="space-y-2" data-aos="fade-up" data-aos-delay="600">
     <h1 className="text-5xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-7xl font-bold tracking-tight">
       <span className="relative inline-block">
         <span className="absolute -inset-2 bg-gradient-to-r from-[#6366f1] to-[#a855f7] blur-2xl opacity-20"></span>
         <span className="relative bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent">
-          Frontend
+          Data Scientist
         </span>
       </span>
       <br />
       <span className="relative inline-block mt-2">
         <span className="absolute -inset-2 bg-gradient-to-r from-[#6366f1] to-[#a855f7] blur-2xl opacity-20"></span>
         <span className="relative bg-gradient-to-r from-[#6366f1] to-[#a855f7] bg-clip-text text-transparent">
-          Developer
+          & AI Researcher
         </span>
       </span>
     </h1>
   </div>
 ));
+
 
 const TechStack = memo(({ tech }) => (
   <div className="px-4 py-2 hidden sm:block rounded-full bg-white/5 backdrop-blur-sm border border-white/10 text-sm text-gray-300 hover:bg-white/10 transition-colors">
@@ -76,12 +76,24 @@ const SocialLink = memo(({ icon: Icon, link, label }) => (
 const TYPING_SPEED = 100;
 const ERASING_SPEED = 50;
 const PAUSE_DURATION = 2000;
-const WORDS = ["Network & Telecom Student", "Tech Enthusiast"];
-const TECH_STACK = ["React", "Javascript", "Node.js", "Tailwind"];
+const WORDS = [
+  "Master's in Data Science",
+  "AI & Machine Learning Researcher",
+  "Financial Risk & Data Analyst", // Thêm vai trò cho ngân hàng
+  "Medical Imaging Specialist"
+];
+const TECH_STACK = [
+  "ML/DL",          // Viết tắt để tối ưu không gian
+  "PyTorch", 
+  "SQL", 
+  "Power BI", 
+  "Python", 
+  "React.js"
+];
 const SOCIAL_LINKS = [
-  { icon: Github, link: "https://github.com/EkiZR", label: "GitHub Profile" },
-  { icon: Linkedin, link: "https://www.linkedin.com/in/ekizr/", label: "LinkedIn Profile" },
-  { icon: Instagram, link: "https://www.instagram.com/ekizr_/?hl=id", label: "Instagram Profile" }
+  { icon: Github, link: "https://github.com/henry18042k", label: "GitHub Profile" },
+  { icon: Linkedin, link: "https://www.linkedin.com/in/ngoc-ly-tran-46475926b/", label: "LinkedIn Profile" },
+  { icon: Instagram, link: "https://www.instagram.com/henry__ssi/", label: "Instagram Profile" }
 ];
 
 const Home = () => {
@@ -140,25 +152,25 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Eki Zulfar Rachman — Frontend Web Developer</title>
-        <meta name="description" content="Website resmi Eki Zulfar Rachman, Front-End Web Developer. Saya berfokus pada penciptaan pengalaman digital yang menarik dan selalu berupaya memberikan solusi terbaik dalam setiap proyek yang saya kerjakan." />
+        <title>Tran Ngoc Ly (Henry) — Data Scientist & AI Researcher</title>
+        <meta name="description" content="Portfolio of Tran Ngoc Ly (Henry), a Data Scientist & AI Researcher with expertise in Python, Machine Learning, and Data Analysis." />
      <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://ekizr.com" />
-        <meta property="og:title" content="Eki Zulfar Rachman — Frontend Web Developer" />
-     <meta property="og:description" content="Website resmi dan portofolio Eki Zulfar Rachman, Front-End Web Developer." />
+        <meta property="og:title" content="Tran Ngoc Ly (Henry) — Data Scientist & AI Researcher" />
+     <meta property="og:description" content="Portfolio of Tran Ngoc Ly (Henry), a Data Scientist & AI Researcher with expertise in Python, Machine Learning, and Data Analysis." />
         <meta property="og:url" content="https://ekizr.com" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{`
           {
             "@context": "https://schema.org",
             "@type": "Person",
-            "name": "Eki Zulfar Rachman",
-            "jobTitle": "Frontend Developer",
+            "name": "Tran Ngoc Ly (Henry)",
+            "jobTitle": "Data Scientist & AI Researcher",
             "url": "https://ekizr.com",
             "sameAs": [
-              "https://github.com/EkiZR",
-              "https://www.linkedin.com/in/ekizr/",
-              "https://www.instagram.com/ekizr_/"
+              "https://github.com/henry18042k",
+              "https://www.linkedin.com/in/ngoc-ly-tran-46475926b/",
+              "https://www.instagram.com/henry__ssi/"
             ]
           }
         `}</script>
@@ -188,7 +200,8 @@ const Home = () => {
                   <p className="text-base md:text-lg text-gray-400 max-w-xl leading-relaxed font-light"
                     data-aos="fade-up"
                     data-aos-delay="1000">
-                    Menciptakan Website Yang Inovatif, Fungsional, dan User-Friendly untuk Solusi Digital.
+                    Transforming financial data into actionable risk insights through 
+                  data analytics and machine learning.
                   </p>
 
                   {/* Tech Stack */}

@@ -21,7 +21,7 @@ const Header = memo(() => (
       data-aos-duration="800"
     >
       <Sparkles className="w-5 h-5 text-purple-400" />
-      Transforming ideas into digital experiences
+      Passionate about applying machine learning and data analysis to solve real-world problems, with a focus on financial data and risk modeling.
       <Sparkles className="w-5 h-5 text-purple-400" />
     </p>
   </div>
@@ -209,18 +209,27 @@ const AboutPage = () => {
                 data-aos-duration="1300"
                 itemProp="name"
               >
-                Eki Zulfar Rachman
+                Tran Ngoc Ly (Henry)
               </span>
             </h2>
             
-            <p 
-              className="text-base sm:text-lg lg:text-xl text-gray-400 leading-relaxed text-justify pb-4 sm:pb-0"
-              data-aos="fade-right"
-              data-aos-duration="1500"
-            >
-        Saya adalah mahasiswa Teknik Informatika yang berfokus pada pengembangan Front-End. 
-Saya berfokus pada penciptaan pengalaman digital yang menarik dan selalu berupaya memberikan solusi terbaik dalam setiap proyek yang saya kerjakan.
-                  </p>
+            <div
+  className="text-base sm:text-lg lg:text-xl text-gray-400 leading-relaxed text-justify pb-4 sm:pb-0"
+  data-aos="fade-right"
+  data-aos-duration="1500"
+>
+  <p className="mb-4">
+    I am a Master’s student in Data Science at Chonnam National University, with a strong foundation in statistical analysis and machine learning. As a two-time recipient of the Global Korea Scholarship (GKS) with a perfect GPA of 4.5/4.5, I have demonstrated consistent academic excellence and research capability.
+  </p>
+
+  <p className="mb-4">
+    Through hands-on projects, I have developed a strong interest in financial data analysis, including risk prediction, loan default analysis, and data-driven reporting. I am proficient in Python and experienced in applying machine learning techniques to large-scale datasets to extract meaningful insights and support decision-making.
+  </p>
+
+  <p>
+    I am particularly interested in transforming complex financial data into actionable risk indicators and contributing to the development of reliable credit evaluation models. I am also proactive in exploring new methods and continuously improving my analytical and domain knowledge to solve real-world problems.
+  </p>
+</div>
 
                {/* Quote Section */}
       <div 
@@ -245,7 +254,7 @@ Saya berfokus pada penciptaan pengalaman digital yang menarik dan selalu berupay
       </div>
 
             <div className="flex flex-col lg:flex-row items-center lg:items-start gap-4 lg:gap-4 lg:px-0 w-full">
-              <a href="https://drive.google.com/drive/folders/1BOm51Grsabb3zj6Xk27K-iRwI1zITcpo" className="w-full lg:w-auto">
+              <a href="https://drive.google.com/drive/folders/1nSCX6ojqeuaNzX-seSqfzHfmJRlODF_R?usp=sharing" className="w-full lg:w-auto">
               <button 
                 data-aos="fade-up"
                 data-aos-duration="800"

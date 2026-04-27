@@ -1,8 +1,8 @@
 # Portfolio V5
 
-Hello everyone\! 👋
+Hello everyone! 👋
 
-Let me introduce myself, I'm **Eki Zulfar Rachman**. On this occasion, I'd like to share the portfolio website project that I've developed. built with React and Supabase, featuring a public-facing site and an admin dashboard.
+I am Tran Ngoc Ly, also known as Henry. I am a Data Science Master's student at Chonnam National University. This portfolio showcases my research and projects in Deep Learning and Medical Imaging, built with React and Supabase. It features both a professional showcase and an integrated management dashboard.
 
 **Live Demo:** [https://ekizr.com](https://ekizr.com)
 

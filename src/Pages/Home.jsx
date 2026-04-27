@@ -158,7 +158,7 @@ const Home = () => {
         <link rel="canonical" href="https://henry-portfolio-six.vercel.app" />
         <meta property="og:title" content="Tran Ngoc Ly (Henry) — Data Scientist & AI Researcher" />
      <meta property="og:description" content="Portfolio of Tran Ngoc Ly (Henry), a Data Scientist & AI Researcher with expertise in Python, Machine Learning, and Data Analysis." />
-        <meta property="og:url" content="https://ekizr.com" />
+        <meta property="og:url" content="https://henry-portfolio-six.vercel.app" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{`
           {

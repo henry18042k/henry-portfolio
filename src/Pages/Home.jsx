@@ -155,7 +155,7 @@ const Home = () => {
         <title>Tran Ngoc Ly (Henry) — Data Scientist & AI Researcher</title>
         <meta name="description" content="Portfolio of Tran Ngoc Ly (Henry), a Data Scientist & AI Researcher with expertise in Python, Machine Learning, and Data Analysis." />
      <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://ekizr.com" />
+        <link rel="canonical" href="https://henry-portfolio-six.vercel.app" />
         <meta property="og:title" content="Tran Ngoc Ly (Henry) — Data Scientist & AI Researcher" />
      <meta property="og:description" content="Portfolio of Tran Ngoc Ly (Henry), a Data Scientist & AI Researcher with expertise in Python, Machine Learning, and Data Analysis." />
         <meta property="og:url" content="https://ekizr.com" />
@@ -166,7 +166,7 @@ const Home = () => {
             "@type": "Person",
             "name": "Tran Ngoc Ly (Henry)",
             "jobTitle": "Data Scientist & AI Researcher",
-            "url": "https://ekizr.com",
+            "url": "https://henry-portfolio-six.vercel.app",
             "sameAs": [
               "https://github.com/henry18042k",
               "https://www.linkedin.com/in/ngoc-ly-tran-46475926b/",

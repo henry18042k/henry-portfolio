@@ -4,7 +4,7 @@ Hello everyone! 👋
 
 I am Tran Ngoc Ly, also known as Henry. I am a Data Science Master's student at Chonnam National University. This portfolio showcases my research and projects in Deep Learning and Medical Imaging, built with React and Supabase. It features both a professional showcase and an integrated management dashboard.
 
-**Live Demo:** [https://ekizr.com](https://ekizr.com)
+**Live Demo:** [https://henry-portfolio-six.vercel.app/](https://ekizr.com)
 
 ---
 
@@ -269,11 +269,3 @@ Upload the contents of the `dist/` folder to your hosting provider.
 
 ---
 
-## Credits & Contact
-
-**Eki Zulfar Rachman**  
-Website: [eki.my.id](https://ekizr.com) · GitHub: [EkiZR](https://github.com/EkiZR)
-
-Thanks to [LottieFiles](https://lottiefiles.com/free-animation/coding-NWhbxMOVgP) and Claude.
-
-⭐ If this project helped you, consider giving it a star on GitHub!

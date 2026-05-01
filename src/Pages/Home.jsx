@@ -86,14 +86,16 @@ const TECH_STACK = [
   "ML/DL",          // Viết tắt để tối ưu không gian
   "PyTorch", 
   "SQL", 
+  "R",
   "Power BI", 
   "Python", 
-  "React.js"
+  "React.js",
+
 ];
 const SOCIAL_LINKS = [
   { icon: Github, link: "https://github.com/henry18042k", label: "GitHub Profile" },
   { icon: Linkedin, link: "https://www.linkedin.com/in/ngoc-ly-tran-46475926b/", label: "LinkedIn Profile" },
-  { icon: Instagram, link: "https://www.instagram.com/henry__ssi/", label: "Instagram Profile" }
+  // { icon: Instagram, link: "https://www.instagram.com/henry__ssi/", label: "Instagram Profile" }
 ];
 
 const Home = () => {

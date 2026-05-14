@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { ExternalLink, ArrowRight } from "lucide-react";
 import { toSlug } from "../utils/slug";
 
-const CardProject = ({ Img, Title, Description, Link: ProjectLink, id }) => {
+const CardProject = ({ Img, Title, Description, Link: ProjectLink, id, TechStack = [] }) => {
   const handleLiveDemo = (e) => {
     if (!ProjectLink) {
       console.log("ProjectLink kosong");
@@ -42,6 +42,19 @@ const CardProject = ({ Img, Title, Description, Link: ProjectLink, id }) => {
             <p className="text-gray-300/80 text-sm leading-relaxed line-clamp-2">
               {Description}
             </p>
+
+            {TechStack.length > 0 && (
+              <div className="flex flex-wrap gap-1.5 pt-1">
+                {TechStack.map((tech, i) => (
+                  <span
+                    key={i}
+                    className="text-xs px-2 py-0.5 rounded-md bg-white/5 text-purple-300/80 border border-purple-500/20"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            )}
 
             <div className="pt-4 flex items-center justify-between">
               {ProjectLink ? (

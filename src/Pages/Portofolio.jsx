@@ -15,7 +15,30 @@ import TechStackIcon from "../components/TechStackIcon";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Certificate from "../components/Certificate";
-import { Code, Award, Boxes } from "lucide-react";
+import { Code, Award, Boxes, BookOpen, ExternalLink as ExtLink } from "lucide-react";
+
+const publications = [
+  {
+    title: "Synthetic Financial Data Generation for Credit Risk Modeling",
+    venue: "Chonnam National University — Master's Thesis (in progress)",
+    year: "2025",
+    type: "Thesis",
+    link: null,
+    description:
+      "Investigating GAN-based synthetic data generation pipelines to augment imbalanced credit-risk datasets, improving loan-default prediction under data-scarcity constraints.",
+    tags: ["Machine Learning", "Synthetic Data", "Credit Risk"],
+  },
+  {
+    title: "Loan Default Prediction with Imbalanced Learning Techniques",
+    venue: "Korea-Vietnam AI Research Exchange",
+    year: "2024",
+    type: "Manuscript",
+    link: null,
+    description:
+      "Comparative study of SMOTE, cost-sensitive learning, and ensemble methods on real-world loan datasets; achieved F1 ≥ 0.87 on minority class.",
+    tags: ["Imbalanced Learning", "Ensemble Methods", "FinTech"],
+  },
+];
 
 
 const ToggleButton = ({ onClick, isShowingMore }) => (
@@ -207,7 +230,7 @@ export default function FullWidthTabs() {
 
   // Sisa dari komponen (return statement) tidak ada perubahan
   return (
-    <div className="md:px-[10%] px-[5%] w-full sm:mt-0 mt-[3rem] bg-[#030014] overflow-hidden" id="Portofolio">
+    <div className="md:px-[10%] px-[5%] w-full sm:mt-0 mt-[3rem] bg-[#030014] overflow-hidden" id="Portfolio">
       {/* Header section - unchanged */}
       <div className="text-center pb-10" data-aos="fade-up" data-aos-duration="1000">
         <h2 className="inline-block text-3xl md:text-5xl font-bold text-center mx-auto text-transparent bg-clip-text bg-gradient-to-r from-[#6366f1] to-[#a855f7]">
@@ -311,6 +334,11 @@ export default function FullWidthTabs() {
               label="Tech Stack"
               {...a11yProps(2)}
             />
+            <Tab
+              icon={<BookOpen className="mb-2 w-5 h-5 transition-all duration-300" />}
+              label="Research"
+              {...a11yProps(3)}
+            />
           </Tabs>
         </AppBar>
 
@@ -334,6 +362,7 @@ export default function FullWidthTabs() {
                       Description={project.Description}
                       Link={project.Link}
                       id={project.id}
+                      TechStack={project.TechStack || []}
                     />
                   </div>
                 ))}
@@ -386,6 +415,52 @@ export default function FullWidthTabs() {
                   </div>
                 ))}
               </div>
+            </div>
+          </TabPanel>
+
+          <TabPanel value={value} index={3} dir={theme.direction}>
+            <div className="container mx-auto pb-[5%] space-y-5">
+              {publications.map((pub, index) => (
+                <div
+                  key={index}
+                  data-aos="fade-up"
+                  data-aos-duration={800 + index * 200}
+                  className="relative group rounded-2xl border border-white/10 bg-slate-900/50 backdrop-blur-lg p-6 hover:border-purple-500/40 transition-all duration-300"
+                >
+                  <div className="flex items-start justify-between gap-4">
+                    <div className="flex-1 space-y-2">
+                      <div className="flex flex-wrap items-center gap-2">
+                        <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30">
+                          {pub.type}
+                        </span>
+                        <span className="text-xs text-gray-500">{pub.year}</span>
+                      </div>
+                      <h3 className="text-base md:text-lg font-semibold text-white group-hover:text-purple-300 transition-colors duration-200">
+                        {pub.title}
+                      </h3>
+                      <p className="text-sm text-purple-400/80 italic">{pub.venue}</p>
+                      <p className="text-sm text-gray-400 leading-relaxed">{pub.description}</p>
+                      <div className="flex flex-wrap gap-2 pt-1">
+                        {pub.tags.map((tag, i) => (
+                          <span key={i} className="text-xs px-2 py-0.5 rounded-md bg-white/5 text-gray-400 border border-white/10">
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                    {pub.link && (
+                      <a
+                        href={pub.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="shrink-0 p-2 rounded-lg bg-white/5 hover:bg-purple-500/20 text-gray-400 hover:text-purple-300 transition-all duration-200"
+                      >
+                        <ExtLink className="w-4 h-4" />
+                      </a>
+                    )}
+                  </div>
+                </div>
+              ))}
             </div>
           </TabPanel>
         </SwipeableViews>

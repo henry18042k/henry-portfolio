@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ExternalLink, ArrowRight } from "lucide-react";
+import { ExternalLink, ArrowRight, Presentation } from "lucide-react";
 import { toSlug } from "../utils/slug";
 
-const CardProject = ({ Img, Title, Description, Link: ProjectLink, id, TechStack = [] }) => {
+const CardProject = ({ Img, Title, Description, Link: ProjectLink, id, TechStack = [], SlideUrl }) => {
   const handleLiveDemo = (e) => {
     if (!ProjectLink) {
       console.log("ProjectLink kosong");
@@ -89,6 +89,18 @@ const CardProject = ({ Img, Title, Description, Link: ProjectLink, id, TechStack
                 </span>
               )}
             </div>
+
+            {SlideUrl && (
+              <a
+                href={SlideUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 w-full inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg border border-purple-500/30 bg-purple-500/10 hover:bg-purple-500/20 text-purple-300 hover:text-purple-200 transition-all duration-200 hover:scale-[1.02] active:scale-95"
+              >
+                <Presentation className="w-4 h-4" />
+                <span className="text-sm font-medium">View Slides</span>
+              </a>
+            )}
           </div>
 
           <div className="absolute inset-0 border border-white/0 group-hover:border-purple-500/50 rounded-xl transition-colors duration-300 -z-50"></div>
